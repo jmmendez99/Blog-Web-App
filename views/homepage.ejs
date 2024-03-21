@@ -1,4 +1,13 @@
 <%- include('./header.ejs') %>
-<h1>test</h1>
+
+<% if (locals.blogContent) { %>
+    <% let keys = blogContent.keys(); %>
+    <% for (const key of keys) { %>
+        <h1><%= key %></h1>
+    <% } %>  
+<% } else { %>
+    <h1>Data is not here</h1>
+<% } %>
+ 
 
 <%- include('./footer.ejs') %>

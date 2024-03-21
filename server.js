@@ -11,10 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 //Map to store blog post information
 const blogContent = new Map([
-  ["Blog Post 1", "Content of blog post"],
-  ["Blog Post 1", "Content of blog post"],
-  ["Blog Post 1", "Content of blog post"],
-  ["Blog Post 1", "Content of blog post"],
+  ["Blog Post 1", "Content of blog post 1"],
+  ["Blog Post 2", "Content of blog post 2"],
+  ["Blog Post 3", "Content of blog post 3"],
+  ["Blog Post 4", "Content of blog post 4"],
 ]);
 
 //Routes
