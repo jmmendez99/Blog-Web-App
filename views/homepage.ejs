@@ -2,12 +2,19 @@
 
 <% if (locals.blogContent) { %>
     <% let keys = blogContent.keys(); %>
+    <ul>
     <% for (const key of keys) { %>
-        <h1><%= key %></h1>
-    <% } %>  
+        <li><a href="/views/viewpost.ejs" class="blogTitle"><%= key %></a></li>
+    <% } %>
+    </ul>  
 <% } else { %>
     <h1>Data is not here</h1>
 <% } %>
- 
+
+<script>
+ document.querySelector(".blogTitle").addEventListener("click", function() { 
+    <p>content of blog post</p>
+ })
+</script> 
 
 <%- include('./footer.ejs') %>
